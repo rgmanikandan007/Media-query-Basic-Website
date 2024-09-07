@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Website</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="navbar-container">
+        <nav class="navbar">
+            <a href="#" class="navbar-logo">
+                <img src="images.png" alt="Logo" />
+            </a>
+            <button class="toggle-button" id="toggle-button">☰</button>
+            <ul class="navbar-list" id="navbar-list">
+                <li class="navbar-item"><a href="#home">Home</a></li>
+                <li class="navbar-item"><a href="#about">About</a></li>
+                <li class="navbar-item"><a href="#services">Services</a></li>
+                <li class="navbar-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav></div>
+
+        <header class="banner">
+            <h1>Welcome to My Website</h1>
+            <p>Your one-stop solution for everything</p>
+        </header>
+    
+        <script>
+            const toggleButton = document.getElementById('toggle-button');
+            const navbarList = document.getElementById('navbar-list');
+    
+            toggleButton.addEventListener('click', () => {
+                navbarList.classList.toggle('active');
+                if (navbarList.classList.contains('active')) {
+                    toggleButton.innerHTML = '✖'; 
+                } 
+                else {
+                    toggleButton.innerHTML = '☰';
+                }
+            });
+        </script>
+
+</body>
+
+</html>

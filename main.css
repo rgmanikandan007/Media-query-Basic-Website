@@ -1,0 +1,111 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar {
+    background-color: #f3dbdb;
+    padding: 10px 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-logo img {
+    height: 40px;
+}
+.navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.navbar-item {
+    margin: 0 15px;
+}
+.navbar-item a {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+}
+.navbar-item a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Toggle Button Styles */
+.toggle-button {
+    display: none;
+    background-color: #d16a6a;
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Mobile Styles (width: 320px and up) */
+@media (max-width: 768px) {
+    .navbar-list {
+        flex-direction: column;
+        align-items: center;
+        display: none; 
+    }
+    .navbar-list.active {
+        display: flex;
+    }
+    .navbar-item {
+        margin: 10px;
+    }
+    .toggle-button {
+        display: block;
+    }
+    .navbar-logo img {
+        height: 30px;
+    }
+}
+
+
+
+
+.banner {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 1px solid #ddd;
+}
+.banner h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+.banner p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 320px) {
+    .banner {
+        padding: 1rem;
+    }
+    .banner h1 {
+        font-size: 1rem;
+    }
+    .banner p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 1.5rem;
+        color: aqua;
+    }
+    .banner p {
+        font-size: 1rem;
+        color: aqua;
+    }
+}
+
