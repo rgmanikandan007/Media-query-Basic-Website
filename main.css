@@ -2,7 +2,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .navbar {
-    background-color: #f3dbdb;
+    background-color: #ffffff;
     padding: 10px 20px;
     position: relative;
     display: flex;
@@ -23,7 +23,7 @@
     margin: 0 15px;
 }
 .navbar-item a {
-    color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 18px;
     padding: 10px 15px;
@@ -37,7 +37,7 @@
 /* Toggle Button Styles */
 .toggle-button {
     display: none;
-    background-color: #d16a6a;
+    background-color: #ddd9d9;
     color: white;
     border: none;
     font-size: 24px;
@@ -67,10 +67,8 @@
 }
 
 
-
-
-.banner {
-    background-color: #f4f4f4;
+.banner{
+    background-color: #ececec;
     color: #333;
     text-align: center;
     padding: 2rem;
@@ -101,11 +99,191 @@
 @media (max-width: 768px) {
     .banner h1 {
         font-size: 1.5rem;
-        color: aqua;
+        color: #a00000;
     }
     .banner p {
         font-size: 1rem;
-        color: aqua;
+        color: #a00000;
     }
 }
 
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.portfolio-item {
+    background-color: #ddd;
+    height: 150px;
+    width: calc(25% - 10px);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 768px) {
+    .portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    
+    .portfolio-item {
+        background-color: #ddd;
+        height: 150px;
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+}
+@media (max-width: 320px){
+    .portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 5px;
+    }
+    
+    .portfolio-item {
+        background-color: #ddd;
+        height: 150px;
+        width: calc(100% - 10px);
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+
+
+
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.about-text, .about-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-text {
+    max-width: 50%;
+}
+
+.about-image {
+    max-width: 50%;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Media query for screens 768px and below */
+@media (max-width: 768px) {
+    .about-text, .about-image {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .about-image {
+        margin-top: 20px;
+    }
+}
+
+/* Media query for screens 320px and below */
+@media (max-width: 320px) {
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-image {
+        order: 2;
+    }
+
+    .about-text {
+        order: 1;
+    }
+}
+
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-column a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #fff;
+}
+
+@media (min-width: 1024px) {
+    .footer-column {
+        width: 25%;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .footer-column {
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-column {
+        width: 100%;
+    }
+}
